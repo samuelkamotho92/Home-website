@@ -27,7 +27,7 @@
 .menu-bar ul li
 {
     text-align:center;
-    width: 120px;
+    width:120px;
     margin:15px;
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -154,7 +154,7 @@ font-family: sans-serif;
     animation-iteration-count: infinite;
     animation-duration: 20s;
     animation-delay:2s;
-    
+    overflow: hidden;
 }
 .imagecon
 {
@@ -276,7 +276,7 @@ margin-top: 0px;
 padding-bottom: 10px;
 margin-bottom: 10px;
 }
-.team
+.container 
 {
     margin: 75px 0;
 }
