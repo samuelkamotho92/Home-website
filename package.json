@@ -1,0 +1,12 @@
+{
+  "name": "home-website",
+  "version": "1.0.0",
+  "description": "Agricultural and rental housing web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel kamotho",
+  "license": "ISC",
+  "dependencies": {}
+}
