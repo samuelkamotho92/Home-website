@@ -2,148 +2,24 @@
 {
     margin: 0px;
     padding: 0px;
-
 }
  body
  {
      background: lawngreen;
      background-size: cover;
      background-position: center;
-     font-family:sans-serif ;
+     font-family:sans-serif;
  }
-.menu-bar
-{
-    background:wheat;
-    text-align:center;
-
-}
-.menu-bar ul
-{
-    display: inline-flex;
-    list-style: none;
-    color:rgb(28, 68, 121);
-    
-}
-.menu-bar ul li
-{
-    text-align:center;
-    width:120px;
-    margin:15px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    z-index: 2;
-}
-.menu-bar ul li a
-{
-text-decoration: none;
-color: rgba(0, 128, 0, 0.336);
-border-radius: 3px;
-padding: 0px;
-box-shadow: 5px;
-}
-.active,.menu-bar ul li:hover
-{
-background:lawngreen;
-border-radius: 2px;
-}
-.menu-bar .fa
-{
-    margin-right: 9px;
-    margin-bottom: 0px;
-}
-.sub-menu-1
-{
-    display: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top:  0px;
-}
-.menu-bar ul li:hover .sub-menu-1
-{
-    display: block;
-    position: absolute;
-    background-blend-mode: darken;
-    margin-top: 0px;
-    margin-left: 10px;
-    padding-top:0px;
-    padding-bottom:0px;
-    opacity: .7;
-}
-.menu-bar ul li:hover .sub-menu-1 ul
-{
-    display: block;
-    margin-bottom: 0px;
-}
-.menu-bar ul li:hover.sub-menu-1 ul li
-{
-    width: 120px;
-    padding: 10px;
-    border-bottom: 1px dotted burlywood;
-    background: transparent;
-    border-radius: 0px;
-    text-align: left;
-}
-.menu-bar ul li:hover.sub-menu-1 ul li:last-child
-{
-    border-bottom: none;
-}
-.menu-bar ul li:hover.sub-menu-1 ul li a:hover
-{
-    color: tomato;
-}
-.hero 
-{
-    position: absolute;
-    width: 1200px;
-    margin-left: 0px;
-    margin-top: 0px;
-    
-}
-h1
-{
-    color:white;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 70px;
-    margin-top: 275px;
-}
-.button
-{
-    margin-top: 30px;
-    margin-left: 440px;
-}
-.btn
-{
-border:1px solid white;
-padding: 10px 30px;
-color: white;
-text-decoration: none;
-margin-right: 5px;
-font-size: 13px;
-text-transform: uppercase;
-}
-.btn-one
-{
-background-color: darkorange;
-font-family: sans-serif;
-}
-.btn-two
-{
-    font-family: sans-serif;
-}
-.btn-two:hover
-{
-    background: darkorange;
-    transition:all 0.5s ease-in;
-}
+ .nav-wrapper
+ {
+     display: inline-block;
+ }
 .slider
 {
     height: 400px;
     width: 100%;
     background-color: gray;
-
-   
-    
+    overflow: hidden;
 }
 .sliderchild
 {
@@ -174,6 +50,7 @@ font-family: sans-serif;
     background-image:url('assets/pic2.jpg');
     background-repeat:no-repeat;
     background-size: cover;
+
 }
 .imagecon:nth-child(3)
 {
@@ -230,65 +107,10 @@ font-family: sans-serif;
 }
 .btn-primary
 {
-background-color: blue;
-padding-top: 10px;
+    margin-bottom: 0px;
 }
-/*---About---*/
-#about
+.about
 {
-    padding-top:35px;
-    padding-bottom: 50px;
-    color: #555;
-}
-#about .btn
-{
-    margin-top:25px;
-    margin-bottom:10px;
-    padding-top:5px;
-}
-.about-content
-{
-padding-top:10px;
-margin-top: 0px;
-}
-/*---Mission*/
-#Mission
-{
-    padding-top:10px;
-    padding-bottom:10px;
-    color: #555;
-}  
-.mission-content
-{
-padding-top:10px;
-margin-top: 0px;
-}
-#Vision
-{
-    padding-top:35px;
-    padding-bottom:10px;
-    color: #555;
-}  
-.vision-content
-{
-padding-top:10px;
-margin-top: 0px;
-padding-bottom: 10px;
-margin-bottom: 10px;
-}
-.container 
-{
-    margin: 75px 0;
-}
-h1
-{
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: burlywood;
-    padding-bottom: 10px;
-}
-.img-box
-{
-    display: flex;
+    display:block;
+    z-index: 2;
 }

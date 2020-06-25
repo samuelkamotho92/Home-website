@@ -1,65 +1,271 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<li lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.8.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.8.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.8.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.8.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.8.2/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--fontawesome icons/ boostrap-->
+    <link rel="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       <!--Import Google Icon Font-->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="materialize" href="/materialize/css/materialize.css/">
+    <link rel="materialize" href="/materialize/css/materialize.min.css">
+    <link rel="materialize" href="/materialize/js/materialize.js">
+   <link rel="materialize" href="/materialize/js/materialize.min.js">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--CSS link to html-->
+    <link rel="stylesheet" href="/public/stylesheet.css">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<title>Green Farm</title>
+</head>
+<body>
+<!---Nav-Bar-->
+
+<header>
+  <nav class="nav-wrapper"  id="Home">
+    <div class="container">
+      <a href="#" class="brand-logo">Green</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+      <i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#Home">Home</a></li>
+        <li class="about"><a href="#About us">About us</a>
+        <ul>
+          <li>mission</li>
+          <li>Vision</li>
+        </ul></li>
+        <li><a href="#Services">Services</a></li>
+       <li><a href="#Products">products</a></li>
+       <li><a href="#Contact us">Contact us</a></li>
+       <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is instagram">
+         <i class="fa fa-instagram"></i>
+       </a></li>
+       <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is facebook">
+        <i class="fa fa-facebook"></i>
+      </a></li>
+      <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is twitter">
+        <i class="fa fa-twitter"></i>
+      </a></li>
+      </ul>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
-</html>
+  </nav><br>
+      <ul class="sidenav grey lighten-2" id="mobile-menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About us">About us</a></li>
+        <li><a href="#Services">Services</a></li>
+       <li><a href="#products">products</a></li>
+       <li><a href="#Contact us">Contact us</a></li>
+      </ul>
+</header>
+<!--slider-->`
+<section>
+<div class="slider">
+<div class="sliderchild">
+  <div class="imagecon"></div>
+  <div class="imagecon"></div>
+  <div class="imagecon"></div>
+  <div class="imagecon"></div>
+  <div class="imagecon"></div>
+</div>
+</div>
+</section>
+<!--About us-->
+<div class="container scrollspy" id="About us">
+<h2>About us</h2>
+<div class="row">
+<div class="col s12 l6">
+  <div class="card">
+    <div class="card-image">
+<img src="/public/assets/fish.jpeg" style="width: 450px; height: 500px;" class="responsive-img">
+<a href="#" class="halfway-fab btn-floating pink pulse">
+  <i class="material-icons">favorite</i>
+</a>
+    </div>
+    <div class="card-content">
+      <span class="card-title">mission</span>
+      <p>Offering the very best of services</p>
+    </div>
+    <div class="card-action">
+      <a href="">More details</a>
+      <a href="">follows on</a>
+    </div>
+  </div>
+</div>
+<div class="col s12 l6">
+  <div class="card">
+    <div class="card-image">
+<img src="/public/assets/House.jpg"  style="width: 250; height: 400px;" class="responsive-img">
+<a href="#" class="halfway-fab btn-floating pink pulse">
+  <i class="material-icons">favorite</i>
+</a>
+    </div>
+    <div class="card-content">
+      <span class="card-title">Vision</span>
+      <p>Delivering the best services as we meet the Country big four agenda</p>
+    </div>
+    <div class="card-action">
+      <a href="">More details</a>
+      <a href="">follows on</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--team-->
+<section class="container section scrollspy" id="team"> 
+  <div class="row">
+    <div class="col s12 l4 offset-l1">
+      <img src="/public/assets/TM 1.jpg" style="width:450px; height: 500px;" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text-darken-4">Team pofile</h2>
+      <p>Mr Samuel </p>
+      <p>The C.E.O</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4 push-l7">
+      <img src="/public/assets/TM 2.jpg"   style="width: 450px; height: 500px;" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 pull-l5 right-align offset-l1">
+      <h2 class="indigo-text-darken-4">Team pofile</h2>
+      <p>Mrs Jane </p>
+      <p>The vice president</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4">
+      <img src="/public/assets/TM 3.jpg"  style="width: 450px; height: 500px;" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text-darken-4">Team pofile</h2>
+      <p>Miss Natasha </p>
+      <p>The Marketing director</p>
+    </div>
+  </div>
+</section>
+<!--services/Tabs-->
+<section class="section container scrollspy" id="Services">
+  <div class="row">
+    <div class="col s12 l4">
+    <h2 class="indigo-text text-darken-4">What we offer</h2>
+    <p>We have the best self contained rooms </p>
+    <p>Our confrence hall arek spacious enough and air conditioned</p>
+    </div>
+    <div class="col s12 l6 offset-l2">
+      <ul class="tabs">
+        <li class="tab col s6">
+          <a href="#Rental houses" class="indigo-text text-darken-4">Rental houses</a>
+        </li>
+        <li class="tab col s6">
+          <a href="#Confrence Hall" class="indigo-text text-darken-4">Confrence Hall</a>
+        </li>
+      </ul>
+      <div class="col s12" id="Rental houses">
+        <p class="flow-text indigo-text text-darken-4">Rental houses</p>
+        <p>In need of either a single room,bed siter or an appartment this is the best place you have come to look at</p>
+        <p>The rental cost is well affordable meeting the tenant pocket</p>
+      </div>
+      <div class="col s12" id="Confrence Hall">
+        <p class="flow-text indigo-text text-darken-4">Confrence Hall</p>
+        <p>To suit a large group of people either coleagues or a team,better come and book your spot now</p>
+        <p>Located just 100m from our headquater</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Contact us-->
+<section class="section container scrollspy" id="Contact us">
+<div class="row">
+  <div class="col s12 l5">
+    <h2 class="indigo text text-darken-4">Get in Touch</h2>
+    <p>Facebook</p>
+    <p>Twitter</p>
+    <p>Instagram</p>
+  </div>
+  <div class="col s12 l5 offset-l2">
+    <form class="content">
+      <div class ="input field">
+        <i class="material-icons prefix">email</i>
+        <input type="email" name="email" id="email">
+        <label for="email">Your email</label>
+      </div>
+      <div class ="input field">
+        <i class="material-icons prefix">message</i>
+        <textarea name="message">Your message
+        </textarea>
+        <label for="message">Your message</label>
+      </div>
+<div class="input-field">
+  <input type="text" name="date" class="datepicker">
+  <label for="date">Choose a date you need me for...</label>
+</div>
+<div class="input-field">
+  <input type="text" name="time" class="timepicker">
+  <label for="date">Choose a time you need me ...</label>
+</div>
+<div class="input-field">
+  <p>Services required...</p>
+  <p>
+  <label>
+    <input type="checkbox">
+    <span>Rental houses</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="checkbox">
+    <span>Confrence Hall</span>
+  </label>
+  </p>
+</div>
+<div class="input-field center">
+  <button class="btn">Submit</button>
+</div>
+    </form>
+  </div>
+</div>
+</section>
+<video width="320pxpx" height="240px" controls>
+  <source src="assets/wildlife.mp4"
+  type="video/mp4">
+</video>
+<!--footer-->
+<footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+<div class="col s12 l6">
+  <h5>About Us</h5>
+  <ul>
+    <li><a href="#" class="purple-text text-lighten-4">mission</a></li>
+    <li><a href="#" class="purple-text text-lighten-4">Vision</a></li>
+    <li><a href="#" class="purple-text text-lighten-4">team</a></li>
+  </ul>
+  
+</div>
+<div class="col s12 l4 offset-l2">
+  <h5>Connect with us</h5>
+    <ul>
+      <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+      <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+        <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+        <li><a href="#" class="grey-text text-lighten-3"></a>Linked In</li>
+    </ul>
+</div>
+</div>
+</div>
+<div class="footer-copyright grey darken-4">
+  <div class="container center-align">&copy;2020 Green Farm</div>
+</div>
+</footer>
+  <!--COMPILED AND MINIFIED JAVASCRIPT-->
+  <script src="/index.js"></script>
+</body>
+ </html>
+       
